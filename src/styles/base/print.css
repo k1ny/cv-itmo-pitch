@@ -1,0 +1,90 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  :root {
+    --color-paper: #ffffff;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .site-header,
+  .scroll-top,
+  .scroll-progress,
+  .media-modal,
+  .icon-button,
+  .text-button--small {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 10pt;
+  }
+
+  html,
+  body {
+    width: 210mm;
+  }
+
+  .layout-container {
+    width: 100%;
+    max-width: none;
+    padding-inline: 12mm;
+  }
+
+  .hero,
+  .content-section {
+    padding-block: 12mm;
+  }
+
+  .hero__showcase {
+    min-height: 90mm;
+    margin-top: 8mm;
+  }
+
+  .hero__pattern,
+  .portrait-card {
+    min-height: 90mm;
+  }
+
+  .portfolio-card {
+    min-height: 80mm;
+  }
+
+  .portfolio-card,
+  .research-card,
+  .experience-card,
+  .wize__panel,
+  .stats,
+  .education__grid,
+  .skills__grid,
+  .contact {
+    break-inside: avoid;
+  }
+
+  .section-heading {
+    break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .motion-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

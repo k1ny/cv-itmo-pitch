@@ -1,0 +1,45 @@
+.experience-card {
+  display: grid;
+  padding-block: 27px;
+  grid-template-columns: 1fr 1.5fr 3fr;
+  gap: 24px;
+  transition: padding 0.2s ease, background 0.2s ease;
+}
+
+.experience-card:hover {
+  padding-inline: 14px;
+  background: rgb(255 255 255 / 38%);
+}
+
+.experience-card__period {
+  margin-bottom: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.experience-card__company {
+  margin-bottom: 7px;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+}
+
+.experience-card__role {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
+
+.experience-card__achievements {
+  margin: 0;
+  padding-left: 17px;
+}
+
+.experience-card__achievements li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 680px) {
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,4 @@
+.workflow { display: grid; margin-block: 24px 0; padding: 0; gap: 10px; list-style: none; }
+.workflow__item { display: grid; padding: 12px; grid-template-columns: 34px 1fr; align-items: center; gap: 12px; border: 1px solid rgb(244 242 237 / 35%); font-family: var(--font-mono); font-size: 12px; transition: transform 0.25s ease, background 0.25s ease; }
+.workflow__item:hover { background: rgb(255 255 255 / 8%); transform: translateX(8px); }
+.workflow__number { color: #8ea5ff; }

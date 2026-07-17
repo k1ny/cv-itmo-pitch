@@ -1,0 +1,5 @@
+.research-card { display: flex; min-height: 330px; padding: clamp(24px, 4vw, 52px); flex-direction: column; justify-content: space-between; border: 1px solid var(--color-line); }
+.research-card__title { margin-block: 18px 14px; font-size: clamp(27px, 3vw, 48px); line-height: 0.95; letter-spacing: -0.05em; }
+.research-card__description { max-width: 640px; color: var(--color-muted); }
+.research-card__award { margin-block: 30px 0; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; }
+.research-card__footer { margin-top: 24px; }

@@ -1,0 +1,5 @@
+.brand { display: inline-flex; width: fit-content; align-items: center; gap: 12px; }
+.brand__mark { display: block; width: 32px; height: 32px; object-fit: cover; object-position: 50% 30%; border: 1px solid var(--color-line); border-radius: 50%; transition: transform 0.3s ease; }
+.brand:hover .brand__mark, .brand:focus-visible .brand__mark { transform: scale(1.08); }
+.brand__name { font-size: 13px; font-weight: 700; letter-spacing: -0.02em; }
+.brand__description { display: block; color: var(--color-muted); font-size: 10px; font-weight: 400; letter-spacing: 0.02em; }

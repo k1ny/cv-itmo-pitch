@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Расширенное CV Диметрия Киянцева для поступления в магистратуру ИТМО и участия в конкурсе питчей WIZE."
+    />
+    <meta name="theme-color" content="#f4f2ed" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Диметрий Киянцев — CV для ИТМО</title>
+  </head>
+  <body class="page-body">
+    <progress
+      class="scroll-progress"
+      data-scroll-progress
+      max="100"
+      value="0"
+      aria-label="Прогресс просмотра страницы"
+    ></progress>
+
+    <header class="site-header">
+      <section class="site-header__container layout-container" aria-label="Шапка сайта">
+        <a class="brand" href="#top" aria-label="Перейти в начало страницы">
+          <img class="brand__mark" src="./images/face.jpeg" alt="" aria-hidden="true" />
+          <span class="brand__name">
+            Диметрий Киянцев
+            <small class="brand__description">CV / ITMO / 2026</small>
+          </span>
+        </a>
+
+        <nav class="site-navigation" aria-label="Основная навигация">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#profile">Профиль</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#experience">Опыт</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#projects">Проекты</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#research">Наука</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">Контакты</a></li>
+          </ul>
+          <button class="icon-button" data-print-button type="button" aria-label="Открыть печать или сохранение в PDF" title="Печать / PDF">
+            <svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+              <path d="M6 14h12v7H6z" />
+            </svg>
+          </button>
+        </nav>
+      </section>
+    </header>
+
+    <main id="top">
+      <section class="hero layout-container" aria-labelledby="hero-title">
+        <header class="hero__header">
+          <p class="eyebrow">Fullstack developer / CO-Founder</p>
+          <p class="eyebrow hero__admission">Поступление в магистратуру ИТМО</p>
+        </header>
+
+        <h1 class="hero__title" id="hero-title">Диметрий<br />Киянцев</h1>
+        <p class="hero__subtitle">Создаю цифровые продукты на стыке разработки, автоматизации бизнес-процессов и платформенных моделей</p>
+
+        <section class="hero__showcase motion-reveal" data-reveal aria-label="Визуальное представление">
+          <figure class="hero__pattern">
+            <svg class="hero__pattern-art" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <pattern id="hero-glyph-pattern" width="84" height="62" patternUnits="userSpaceOnUse">
+                  <rect x="4" y="5" width="13" height="13" rx="1" fill="currentColor" />
+                  <circle cx="38" cy="12" r="6" fill="currentColor" />
+                  <path d="M61 5v14M54 12h14" stroke="currentColor" stroke-width="4" />
+                  <path d="m76 7 8 10m0-10-8 10" stroke="currentColor" stroke-width="3" />
+                  <path d="m9 39 13 8-13 8Z" fill="currentColor" />
+                  <circle cx="40" cy="47" r="3" fill="currentColor" />
+                  <path d="M59 39v16m-8-8h16" stroke="currentColor" stroke-width="3" />
+                  <rect x="76" y="42" width="8" height="8" fill="currentColor" />
+                  <animate class="hero__pattern-animation" attributeName="x" from="0" to="84" dur="14s" repeatCount="indefinite" />
+                  <animate class="hero__pattern-animation" attributeName="y" from="0" to="62" dur="19s" repeatCount="indefinite" />
+                </pattern>
+                <radialGradient id="hero-glyph-mask">
+                  <stop offset="0" stop-color="black" />
+                  <stop offset="42%" stop-color="black" />
+                  <stop offset="70%" stop-color="white" stop-opacity="0.35" />
+                  <stop offset="100%" stop-color="white" />
+                </radialGradient>
+                <mask id="hero-glyph-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="700">
+                  <rect width="1200" height="700" fill="url(#hero-glyph-mask)" />
+                </mask>
+              </defs>
+              <rect class="hero__pattern-field" width="1200" height="700" fill="url(#hero-glyph-pattern)" mask="url(#hero-glyph-fade)" />
+            </svg>
+            <figcaption class="hero__pattern-copy">
+              <strong class="hero__pattern-title">Опыт<br />Проекты<br />Образование</strong>
+              <span class="hero__pattern-note">Разработка · Продукты · Исследования</span>
+            </figcaption>
+          </figure>
+          <figure class="portrait-card">
+            <span class="portrait-card__visual">
+              <img class="portrait-card__image" src="./images/face.jpeg" alt="Фотография Диметрия Киянцева" />
+            </span>
+            <figcaption class="portrait-card__caption">
+              <span>Санкт-Петербург<br />21 год</span>
+              <span class="portrait-card__status" title="Открыт к новым проектам" aria-label="Открыт к новым проектам"></span>
+            </figcaption>
+          </figure>
+        </section>
+
+        <dl class="stats motion-reveal" data-reveal>
+          <section class="stats__item">
+            <dt class="eyebrow">Коммерческий опыт</dt>
+            <dd class="stats__value">2+ года</dd>
+            <dd class="stats__description">Разработка сложных веб-приложений</dd>
+          </section>
+          <section class="stats__item">
+            <dt class="eyebrow">Основной стартап</dt>
+            <dd class="stats__value">WIZE</dd>
+            <dd class="stats__description">Платформа автоматизации процессов</dd>
+          </section>
+          <section class="stats__item">
+            <dt class="eyebrow">Научные достижения</dt>
+            <dd class="stats__value">2 победы</dd>
+            <dd class="stats__description">Первые места на конкурсах научных докладов</dd>
+          </section>
+          <section class="stats__item">
+            <dt class="eyebrow">Публикации</dt>
+            <dd class="stats__value">1</dd>
+            <dd class="stats__description">Статья в международном сборнике</dd>
+          </section>
+        </dl>
+      </section>
+
+      <section class="profile content-section layout-container" id="profile" aria-labelledby="profile-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">01 / ПРОФИЛЬ</p>
+          <section class="section-heading__content">
+            <h2 class="section-heading__title" id="profile-title">Технологии<br />как инструмент изменений</h2>
+            <p class="section-heading__lead">Мне интересны продукты, которые сокращают ручную работу, связывают подразделения и формируют основу для масштабирования бизнеса</p>
+          </section>
+        </header>
+
+        <article class="profile__content motion-reveal" data-reveal>
+          <p class="profile__statement">Соединяю инженерную глубину с продуктовым мышлением — от архитектуры и интерфейса до бизнес-модели</p>
+          <section class="profile__description" aria-label="Профессиональный профиль">
+            <p>Работаю с frontend- и backend-разработкой, участвую в проектировании систем и пользовательских сценариев. Профессиональный опыт включает ИИ-аналитику, карты и геоданные, обработку видео, 3D-интерфейсы, Wi‑Fi- и Bluetooth-модули.</p>
+            <p>Собственные проекты помогли пройти полный путь: определить проблему, собрать продукт, проверить пользовательский сценарий, выстроить архитектуру и сформулировать модель развития.</p>
+            <p>В магистратуре ИТМО хочу научиться оценивать рынок, проверять бизнес-гипотезы, управлять развитием продукта и выстраивать стратегию масштабирования технологической компании.</p>
+          </section>
+        </article>
+      </section>
+
+      <section class="experience content-section layout-container" id="experience" aria-labelledby="experience-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">02 / ОПЫТ</p>
+          <section class="section-heading__content">
+            <h2 class="section-heading__title" id="experience-title">Профессиональная<br />практика</h2>
+            <p class="section-heading__lead">Разрабатываю корпоративные системы, где важны производительность, надёжная архитектура и понятный интерфейс</p>
+          </section>
+        </header>
+
+        <ol class="experience__timeline motion-reveal" data-reveal>
+          <li class="experience__item">
+            <article class="experience-card">
+              <p class="experience-card__period"><time datetime="2025-07">ИЮЛЬ 2025</time> — НАСТОЯЩЕЕ ВРЕМЯ</p>
+              <header class="experience-card__header"><h3 class="experience-card__company">НеоБИТ</h3><p class="experience-card__role">Frontend / Fullstack-разработчик</p></header>
+              <ul class="experience-card__achievements">
+                <li>Разработка корпоративных продуктов - подробности ограничены NDA</li>
+                <li>Система генерации аналитических отчётов с помощью ИИ</li>
+                <li>Системы работы с картами, геоданными и построением маршрутов</li>
+                <li>Интерфейсы обработки видео с выделением объектов</li>
+                <li>Система для работы с Wi‑Fi и Bluetooth-модулями</li>
+                <li>Внедрил TanStack Query, code splitting, Vite и автоматических проверок качества кода</li>
+              </ul>
+            </article>
+          </li>
+          <!--<li class="experience__item">
+            <article class="experience-card">
+              <p class="experience-card__period"><time datetime="P1Y">1 ГОД</time></p>
+              <header class="experience-card__header"><h3 class="experience-card__company">WIZE</h3><p class="experience-card__role">Разработчик и автор продукта</p></header>
+              <ul class="experience-card__achievements">
+                <li>Проектирование корпоративной платформы с мультитенантной архитектурой</li>
+                <li>Реализация проектов, задач, ролей и гибкой модели прав доступа</li>
+                <li>Создание системы независимых расширений с открытым API</li>
+                <li>Автоматизация клиентского SDK через OpenAPI Generator</li>
+                <li>Разработка UI-kit, drag & drop-взаимодействий и сценариев реального времени</li>
+              </ul>
+            </article>
+          </li>-->
+          <li class="experience__item">
+            <article class="experience-card">
+              <p class="experience-card__period"><time datetime="2023-03">МАРТ 2024</time> — <time datetime="2025-02">ФЕВРАЛЬ 2025</time></p>
+              <header class="experience-card__header"><h3 class="experience-card__company">MRocket</h3><p class="experience-card__role">Frontend-разработчик</p></header>
+              <ul class="experience-card__achievements">
+                <li>Разработка и развитие крупных клиентских приложений на React и TypeScript</li>
+                <li>Проектирование архитектуры интерфейсов и интеграция с внутренними API</li>
+                <li>Оптимизация загрузки данных, производительности и пользовательских сценариев</li>
+                <li>Развитие общей компонентной базы и стандартов frontend-разработки</li>
+                 <li>Внедрил TS и соверменные библиотеки в разработке</li>
+                 <li>Разработал собственный UI-kit</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section class="wize content-section layout-container" id="wize" aria-labelledby="wize-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">03 / ОСНОВНОЙ ПРОЕКТ</p>
+          <section class="section-heading__content">
+            <h2 class="section-heading__title" id="wize-title">WIZE</h2>
+            <p class="section-heading__lead">Корпоративная платформа, которая переводит бизнес-процесс из последовательности ручных действий в управляемый автоматический сценарий</p>
+          </section>
+        </header>
+
+        <article class="wize__panel motion-reveal" data-reveal>
+          <section class="wize__description">
+            <h3 class="wize__slogan">Описать один раз - выполнять автоматически</h3>
+            <p class="wize__paragraph">После поступления заявки WIZE может создать задачу менеджеру, направить её на согласование, передать следующему отделу и уведомить клиента. Сотрудники сосредотачиваются на содержательной работе, а не на передаче информации между подразделениями.</p>
+            <p class="wize__paragraph">Поскольку процессы компаний отличаются, платформа не пытается заранее реализовать все сценарии. Пользователи и партнёры могут подключать независимые модули со своей бизнес-логикой, backend и базой данных.</p>
+            <ul class="tag-list" aria-label="Ключевые характеристики WIZE">
+              <li class="tag-list__item">Multitenancy</li><li class="tag-list__item">Open API</li><li class="tag-list__item">Extensions</li><li class="tag-list__item">RBAC</li><li class="tag-list__item">Workflow</li>
+            </ul>
+          </section>
+          <aside class="wize__scenario" aria-label="Пример автоматизированного сценария">
+            <section>
+              <p class="eyebrow wize__scenario-label">Пример автоматизированного сценария</p>
+              <ol class="workflow">
+                <li class="workflow__item"><span class="workflow__number">01</span><span>Поступление заявки</span></li>
+                <li class="workflow__item"><span class="workflow__number">02</span><span>Создание задачи менеджеру</span></li>
+                <li class="workflow__item"><span class="workflow__number">03</span><span>Согласование документов</span></li>
+                <li class="workflow__item"><span class="workflow__number">04</span><span>Передача следующему отделу</span></li>
+                <li class="workflow__item"><span class="workflow__number">05</span><span>Уведомление клиента</span></li>
+              </ol>
+            </section>
+            <p class="wize__business-model">Платформенная модель: разработчики создают и продают модули, а каждый новый модуль повышает ценность WIZE для следующих компаний.</p>
+          </aside>
+        </article>
+      </section>
+
+      <section class="portfolio content-section layout-container" id="projects" aria-labelledby="projects-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">04 / БИЗНЕС-ПРОЕКТЫ</p>
+          <section class="section-heading__content">
+            <h2 class="section-heading__title" id="projects-title">Продукты<br />для разных рынков</h2>
+            <p class="section-heading__lead">Документооборот, интерьерное проектирование, корпоративная автоматизация и рынок секонд-хендов — разные задачи, объединённые ориентацией на конкретный пользовательский процесс</p>
+          </section>
+        </header>
+
+        <section class="portfolio__grid motion-reveal" data-reveal aria-label="Бизнес-проекты">
+          <article class="portfolio-card portfolio-card--wide portfolio-card--doki">
+            <a class="portfolio-card__preview" href="https://dokivklik.ru/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт проекта Доки в клик">
+              <img class="portfolio-card__image" src="./images/doki.webp" alt="Интерфейс сервиса Доки в клик" loading="lazy" />
+            </a>
+            <section class="portfolio-card__overlay">
+              <h3 class="portfolio-card__title">Доки в клик</h3>
+              <p class="portfolio-card__description">Формирование и дистанционное подписание договоров аренды через Telegram: персональная ссылка, простая электронная подпись, PDF и проверка подлинности</p>
+              <footer class="portfolio-card__meta"><span>PropTech / LegalTech</span><a class="portfolio-card__link" href="https://dokivklik.ru/" target="_blank" rel="noopener noreferrer">Открыть ↗</a></footer>
+            </section>
+          </article>
+
+          <article class="portfolio-card portfolio-card--narrow">
+            <a class="portfolio-card__preview" href="https://stately-monstera-5699b2.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт проекта Typeroom">
+              <img class="portfolio-card__image" src="./images/typeroom.webp" alt="Визуализация интерьера в Typeroom" loading="lazy" />
+            </a>
+            <section class="portfolio-card__overlay">
+              <h3 class="portfolio-card__title">Typeroom</h3>
+              <p class="portfolio-card__description">ИИ-сервис: сканирование или загрузка плана помещения, обмерный план, расстановка мебели, 3D-визуализация и итоговый проект</p>
+              <footer class="portfolio-card__meta"><span>AI / InteriorTech</span><a class="portfolio-card__link" href="https://stately-monstera-5699b2.netlify.app/" target="_blank" rel="noopener noreferrer">Открыть ↗</a></footer>
+            </section>
+          </article>
+
+          <article class="portfolio-card portfolio-card--narrow">
+            <div class="portfolio-card__preview portfolio-card__preview--static">
+              <img class="portfolio-card__image" src="./images/raggies.webp" alt="Интерфейс агрегатора секонд-хендов Raggies" loading="lazy" />
+            </div>
+            <section class="portfolio-card__overlay">
+              <h3 class="portfolio-card__title">Raggies</h3>
+              <p class="portfolio-card__description">Закрытый стартап: агрегатор и маркетплейс секонд-хендов с картой магазинов, каталогом, заказами, доставкой, отзывами, аналитикой и кабинетом продавца</p>
+              <footer class="portfolio-card__meta"><span>Marketplace / FashionTech</span><span>Проект закрыт</span></footer>
+            </section>
+          </article>
+
+          <article class="portfolio-card portfolio-card--wide portfolio-card--wize">
+            <a class="portfolio-card__wize-link" href="#wize" aria-label="Перейти к подробному описанию WIZE">
+              <img class="portfolio-card__image portfolio-card__image--wize" src="./images/wize-workspace.png" alt="Рабочее место и канбан-доска WIZE" loading="lazy" />
+              <div class="portfolio-card__wize-mark" aria-hidden="true">
+                <img src="./images/wize-logo.svg" alt="" />
+              </div>
+              <section class="portfolio-card__overlay portfolio-card__overlay--wize">
+                <h3 class="portfolio-card__title">WIZE</h3>
+                <p class="portfolio-card__description">Платформа автоматизации корпоративных процессов с мультитенантностью, открытым API и экосистемой независимых модулей</p>
+                <footer class="portfolio-card__meta"><span>B2B SaaS / Platform</span><span>Подробнее ↑</span></footer>
+              </section>
+            </a>
+          </article>
+        </section>
+      </section>
+
+      <section class="research content-section layout-container" id="research" aria-labelledby="research-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">05 / НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</p>
+          <section class="section-heading__content">
+            <h2 class="section-heading__title" id="research-title">Наука<br />и системное мышление</h2>
+            <p class="section-heading__lead">Научные работы охватывают алгоритмическую эффективность и новые модели цифровой инфраструктуры.</p>
+          </section>
+        </header>
+
+        <section class="research__grid motion-reveal" data-reveal aria-label="Научные работы">
+          <article class="research-card">
+            <header>
+              <p class="eyebrow">Опубликованная статья / 2026</p>
+              <h3 class="research-card__title">Web3 как концепция цифровой автономии</h3>
+              <p class="research-card__description">От централизованных платформ к децентрализованной среде. Рассмотрены блокчейн, смарт-контракты, децентрализованные приложения, токенизация и ограничения внедрения Web3.</p>
+            </header>
+            <footer class="research-card__footer">
+              <p class="research-card__award">I место — конкурс научных докладов</p>
+              <button class="text-button" type="button" data-modal-image="./images/diploma-web3.webp" data-modal-caption="Диплом за 1 место на XXVI Международной научно-практической конференции, 21 апреля 2026 года">Посмотреть диплом ↗</button>
+            </footer>
+          </article>
+
+          <article class="research-card">
+            <header>
+              <p class="eyebrow">Научная работа / 2025</p>
+              <h3 class="research-card__title">Информационно-алгоритмический анализ Radix Sort</h3>
+              <p class="research-card__description">Теоретический и экспериментальный анализ поразрядной сортировки, её вычислительной сложности, производительности и областей целесообразного применения.</p>
+            </header>
+            <footer class="research-card__footer">
+              <p class="research-card__award">I место — конкурс научных докладов</p>
+              <button class="text-button" type="button" data-modal-image="./images/diploma-radix.webp" data-modal-caption="Диплом за 1 место на II Международном научно-практическом семинаре, 23 декабря 2025 года">Посмотреть диплом ↗</button>
+            </footer>
+          </article>
+        </section>
+      </section>
+
+      <section class="education content-section layout-container" id="education" aria-labelledby="education-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">06 / ОБРАЗОВАНИЕ</p>
+          <section class="section-heading__content"><h2 class="section-heading__title" id="education-title">Следующий этап —<br />ИТМО</h2></section>
+        </header>
+
+        <section class="education__grid motion-reveal" data-reveal>
+          <article class="education__degree">
+            <p class="eyebrow">Бакалавриат / 2026</p>
+            <h3 class="education__university">Санкт-Петербургский государственный университет аэрокосмического приборостроения</h3>
+            <p class="education__speciality"><span>09.03.03</span> Прикладная информатика</p>
+            <p>Институт вычислительных систем и программирования.</p>
+            <p>Фокус обучения — проектирование информационных систем, программная инженерия и разработка цифровых продуктов.</p>
+          </article>
+          <aside class="education__admission" aria-label="Выбранные программы магистратуры">
+            <p class="eyebrow education__label">Целевые программы магистратуры ИТМО</p>
+            <ul class="education__programs">
+              <li class="education__program">Управление высокотехнологичным бизнесом</li>
+              <li class="education__program">Технологии и стратегии бизнес-трансформации</li>
+            </ul>
+            <p class="education__goal">Цель — развить компетенции в продуктовой стратегии, управлении инновациями и масштабировании решений, чтобы выводить технологические проекты на рынок и превращать их в устойчивые масштабируемые компании.</p>
+          </aside>
+        </section>
+      </section>
+
+      <section class="skills content-section layout-container" id="skills" aria-labelledby="skills-title">
+        <header class="section-heading motion-reveal" data-reveal>
+          <p class="section-heading__number">07 / КОМПЕТЕНЦИИ</p>
+          <section class="section-heading__content"><h2 class="section-heading__title" id="skills-title">От кода<br />до продукта</h2></section>
+        </header>
+
+        <section class="skills__grid motion-reveal" data-reveal aria-label="Профессиональные компетенции">
+          <article class="skill-card">
+            <p class="eyebrow">Frontend</p>
+            <h3 class="skill-card__title">Клиентские системы</h3>
+            <ul class="skill-card__list"><li>React</li><li>TypeScript</li><li>Next.js</li><li>TanStack Query</li><li>TanStack Router</li><li>Redux Toolkit</li><li>Zustand</li><li>React Hook Form</li><li>Zod</li><li>Vite</li><li>Webpack</li><li>Tailwind</li><li>Radix UI</li><li>shadcn/ui</li></ul>
+          </article>
+          <article class="skill-card">
+            <p class="eyebrow">Backend &amp; Architecture</p>
+            <h3 class="skill-card__title">Платформенная основа</h3>
+            <ul class="skill-card__list"><li>Node.js</li><li>NestJS</li><li>REST API</li><li>OpenAPI</li><li>MongoDB</li><li>PostgreSQL</li><li>JWT</li><li>Socket.io</li><li>Docker</li></ul>
+          </article>
+          <article class="skill-card">
+            <p class="eyebrow">Product &amp; Research</p>
+            <h3 class="skill-card__title">Развитие решений</h3>
+            <ul class="skill-card__list"><li>Продуктовая архитектура</li><li>Автоматизация процессов</li><li>UX/UI</li><li>Системный анализ</li><li>Научные публикации</li><li>Публичные выступления</li><li>Проектирование платформ</li></ul>
+          </article>
+        </section>
+      </section>
+
+      <section class="contact layout-container" id="contact" aria-labelledby="contact-title">
+        <header class="contact__header motion-reveal" data-reveal><h2 class="contact__title" id="contact-title">Давайте<br />создавать</h2></header>
+        <article class="contact__content motion-reveal" data-reveal>
+          <p class="eyebrow">Контакты</p>
+          <address class="contact__links">
+            <section class="contact__link-row">
+              <a href="mailto:kiyantsev90@mail.ru">kiyantsev90@mail.ru</a>
+              <button class="text-button text-button--small" type="button" data-copy-value="kiyantsev90@mail.ru">Копировать</button>
+            </section>
+            <a class="contact__link-row" href="https://t.me/k1nycs" target="_blank" rel="noopener noreferrer"><span>Telegram</span><span aria-hidden="true">↗</span></a>
+            <a class="contact__link-row" href="tel:+79288277706"><span>+7 928 827-77-06</span><span aria-hidden="true">↗</span></a>
+          </address>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer layout-container">
+      <p class="site-footer__text">Диметрий Киянцев / Санкт-Петербург / 2026</p>
+      <p class="site-footer__text">CV для магистратуры ИТМО</p>
+    </footer>
+
+    <button class="scroll-top" data-scroll-top type="button" aria-label="Вернуться наверх">↑</button>
+
+    <dialog class="media-modal" data-media-modal aria-labelledby="media-modal-caption">
+      <section class="media-modal__content">
+        <button class="media-modal__close" data-modal-close type="button" aria-label="Закрыть просмотр">×</button>
+        <figure class="media-modal__figure">
+          <img class="media-modal__image" data-modal-image alt="" />
+          <figcaption class="media-modal__caption" data-modal-caption id="media-modal-caption"></figcaption>
+        </figure>
+      </section>
+    </dialog>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

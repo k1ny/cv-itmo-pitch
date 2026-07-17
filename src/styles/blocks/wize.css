@@ -1,0 +1,8 @@
+.wize__panel { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1px; background: var(--color-line); border: 1px solid var(--color-line); }
+.wize__description, .wize__scenario { padding: clamp(28px, 5vw, 70px); background: var(--color-paper); }
+.wize__slogan { margin-bottom: 18px; font-size: clamp(42px, 6vw, 88px); line-height: 0.85; letter-spacing: -0.075em; }
+.wize__paragraph { max-width: 700px; font-size: 18px; }
+.wize__scenario { display: flex; flex-direction: column; justify-content: space-between; color: var(--color-paper); background: var(--color-ink); }
+.wize__scenario-label, .wize__business-model { color: #a8a8a8; }
+.wize__business-model { margin-block: 38px 0; font-size: 13px; }
+@media (max-width: 980px) { .wize__panel { grid-template-columns: 1fr; } }

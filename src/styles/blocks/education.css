@@ -1,0 +1,11 @@
+.education__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(48px, 7vw, 110px); }
+.education__university { max-width: 760px; margin-block: 12px 28px; font-size: clamp(32px, 3.4vw, 54px); line-height: 0.98; letter-spacing: -0.05em; }
+.education__degree p { max-width: 700px; }
+.education__speciality { display: flex; margin-bottom: 24px; padding-block: 14px; align-items: baseline; gap: 18px; border-block: 1px solid var(--color-line); font-size: clamp(18px, 1.7vw, 24px); font-weight: 700; letter-spacing: -0.025em; }
+.education__speciality span { color: var(--color-muted); font: 11px/1 var(--font-mono); letter-spacing: 0.06em; }
+.education__label { margin-bottom: 18px; }
+.education__programs { margin: 0; padding: 0; border-top: 1px solid var(--color-line); list-style: none; }
+.education__program { padding-block: 20px; border-bottom: 1px solid var(--color-line); font-size: clamp(21px, 2.4vw, 34px); line-height: 1.05; letter-spacing: -0.035em; }
+.education__goal { max-width: 700px; margin-block: 30px 0; }
+@media (max-width: 980px) { .education__grid { grid-template-columns: 1fr; } }
+@media (max-width: 680px) { .education__university { font-size: clamp(30px, 10vw, 44px); } .education__speciality { align-items: flex-start; flex-direction: column; gap: 8px; } }

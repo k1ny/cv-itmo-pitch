@@ -1,0 +1,14 @@
+:root {
+  --color-paper: #f4f2ed;
+  --color-ink: #111111;
+  --color-muted: #66645f;
+  --color-line: rgb(17 17 17 / 38%);
+  --color-line-soft: rgb(17 17 17 / 15%);
+  --color-accent: #1641d8;
+  --color-accent-soft: #e8ebff;
+  --color-panel: #ece9e2;
+  --layout-max-width: 1480px;
+  --layout-gutter: clamp(18px, 3vw, 48px);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", monospace;
+}

@@ -1,0 +1,14 @@
+.icon-button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--color-line);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.icon-button:hover,
+.icon-button:focus-visible { color: var(--color-paper); background: var(--color-ink); }
+.icon-button__icon { width: 15px; height: 15px; }

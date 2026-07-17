@@ -1,0 +1,2 @@
+.tag-list { display: flex; margin-block: 32px 0; padding: 0; flex-wrap: wrap; gap: 8px; list-style: none; }
+.tag-list__item { padding: 7px 10px; border: 1px solid currentcolor; font: 10px/1 var(--font-mono); text-transform: uppercase; }

@@ -1,0 +1,4 @@
+.section-heading { display: grid; margin-bottom: 54px; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 28px; }
+.section-heading__number { margin-bottom: 0; color: var(--color-muted); font: 12px/1 var(--font-mono); }
+.section-heading__title { margin: 0; font-size: clamp(42px, 6vw, 92px); line-height: 0.9; letter-spacing: -0.065em; text-transform: uppercase; }
+.section-heading__lead { max-width: 900px; margin-block: 25px 0; font-size: clamp(18px, 2vw, 29px); line-height: 1.25; letter-spacing: -0.035em; }
