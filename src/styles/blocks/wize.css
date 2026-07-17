@@ -5,4 +5,6 @@
 .wize__scenario { display: flex; flex-direction: column; justify-content: space-between; color: var(--color-paper); background: var(--color-ink); }
 .wize__scenario-label, .wize__business-model { color: #a8a8a8; }
 .wize__business-model { margin-block: 38px 0; font-size: 13px; }
+@media (max-width: 1280px) { .wize__panel { grid-template-columns: 1fr 0.82fr; } .wize__description, .wize__scenario { padding: clamp(32px, 3.2vw, 42px); } .wize__slogan { font-size: clamp(42px, 5vw, 64px); } .wize__paragraph { font-size: 17px; } }
 @media (max-width: 980px) { .wize__panel { grid-template-columns: 1fr; } }
+@media (max-width: 680px) { .wize__description, .wize__scenario { padding: 24px; } }

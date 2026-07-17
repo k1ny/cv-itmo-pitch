@@ -46,13 +46,28 @@
   }
 
   .hero__showcase {
+    display: grid !important;
     min-height: 90mm;
     margin-top: 8mm;
+    grid-template-columns: minmax(0, 3fr) minmax(60mm, 1fr) !important;
+  }
+
+  .mobile-hero {
+    display: none !important;
   }
 
   .hero__pattern,
   .portrait-card {
     min-height: 90mm;
+  }
+
+  .portrait-card {
+    width: auto;
+    justify-self: stretch;
+  }
+
+  .portrait-card__visual {
+    aspect-ratio: auto;
   }
 
   .portfolio-card {

@@ -10,6 +10,7 @@
 @import "./blocks/site-navigation.css";
 @import "./blocks/hero.css";
 @import "./blocks/portrait-card.css";
+@import "./blocks/mobile-hero.css";
 @import "./blocks/stats.css";
 @import "./blocks/section-heading.css";
 @import "./blocks/profile.css";

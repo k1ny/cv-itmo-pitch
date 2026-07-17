@@ -37,6 +37,34 @@
   margin-bottom: 6px;
 }
 
+@media (max-width: 1280px) {
+  .experience-card {
+    padding-block: 24px;
+    grid-template-columns: 0.9fr 1.3fr 2.8fr;
+    gap: 18px;
+  }
+
+  .experience-card__company {
+    font-size: 22px;
+  }
+
+  .experience-card__achievements {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 980px) {
+  .experience-card {
+    padding-block: 20px;
+    grid-template-columns: minmax(120px, 0.8fr) minmax(0, 1.2fr);
+  }
+
+  .experience-card__achievements {
+    padding-top: 8px;
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 680px) {
   .experience-card {
     grid-template-columns: 1fr;

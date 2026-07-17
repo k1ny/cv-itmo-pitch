@@ -2,3 +2,4 @@
 .workflow__item { display: grid; padding: 12px; grid-template-columns: 34px 1fr; align-items: center; gap: 12px; border: 1px solid rgb(244 242 237 / 35%); font-family: var(--font-mono); font-size: 12px; transition: transform 0.25s ease, background 0.25s ease; }
 .workflow__item:hover { background: rgb(255 255 255 / 8%); transform: translateX(8px); }
 .workflow__number { color: #8ea5ff; }
+@media (max-width: 1280px) { .workflow__item { padding: 10px; grid-template-columns: 30px 1fr; gap: 10px; font-size: 11px; } }

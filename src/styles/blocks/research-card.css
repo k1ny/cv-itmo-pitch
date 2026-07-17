@@ -3,3 +3,4 @@
 .research-card__description { max-width: 640px; color: var(--color-muted); }
 .research-card__award { margin-block: 30px 0; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; }
 .research-card__footer { margin-top: 24px; }
+@media (max-width: 1280px) { .research-card { min-height: 300px; padding: clamp(28px, 3vw, 38px); } .research-card__title { font-size: clamp(28px, 3vw, 40px); } }

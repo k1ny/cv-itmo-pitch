@@ -47,8 +47,23 @@
     border-radius: 50%;
     box-shadow: 0 0 0 6px rgb(22 65 216 / 12%);
 }
+@media (max-width: 1280px) {
+    .portrait-card {
+        min-height: 420px;
+    }
+}
 @media (max-width: 980px) {
     .portrait-card {
-        min-height: 430px;
+        width: min(100%, 420px);
+        min-height: 0;
+        justify-self: center;
+    }
+    .portrait-card__visual {
+        aspect-ratio: 4 / 5;
+    }
+}
+@media (max-width: 680px) {
+    .portrait-card {
+        width: min(100%, 340px);
     }
 }
